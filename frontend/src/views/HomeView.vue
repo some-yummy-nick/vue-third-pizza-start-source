@@ -13,7 +13,6 @@
             <div class="sheet__content dough" >
               <label :class="'dough__input dough__input--'+ item.value" v-for="item in doughItems" :key="item.id">
                 <input type="radio" name="dought" :value="item.value" class="visually-hidden" checked>
-                    <img :src="getImage(item.image)" :alt="item.name" />
                 <b>{{ item.name}}</b>
                 <span>{{ item.description }}</span>
               </label>
@@ -56,13 +55,7 @@
 
                 <ul class="ingredients__list">
                   <li class="ingredients__item"  v-for="item in ingredientItems" :key="item.id">
-                    <div class="filling">
-                      <img
-                        :src="getImage(item.image)"
-                        :alt="item.name"
-                      />
-                      <span :class="'filling filling--' + item.value">{{ item.name }}</span>
-                    </div>
+                    <span :class="'filling filling--' + item.value">{{ item.name }}</span>
                     <div class="counter counter--orange ingredients__counter">
                       <button type="button" class="counter__button counter__button--minus" disabled>
                         <span class="visually-hidden">Меньше</span>
@@ -124,10 +117,5 @@ const doughItems = doughJSON.map(normalizeDough);
 const ingredientItems = ingredientsJSON.map(normalizeIngredients);
 const sauceItems = saucesJSON.map(normalizeSauces);
 const sizeItems = sizesJSON.map(normalizeSize);
-
-const getImage = image => {
-  // https://vitejs.dev/guide/assets.html#new-url-url-import-meta-url
-  return new URL(`../assets/img/${image}`, import.meta.url).href
-}
 
 </script>

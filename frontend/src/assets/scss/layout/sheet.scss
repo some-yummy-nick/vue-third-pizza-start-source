@@ -4,6 +4,10 @@
   border-radius: 8px;
   background-color: $white;
   box-shadow: $shadow-light;
+
+  &__inner{
+    flex-grow: 1;
+  }
 }
 
 .sheet__title {

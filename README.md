@@ -1,5 +1,7 @@
 # HTML Academy. Личный проект «Pizza»
 
+[Результат](https://some-yummy-vue-pizza.netlify.app/)
+
 ## Начальные требования
 - Docker
 - NodeJS >= 16

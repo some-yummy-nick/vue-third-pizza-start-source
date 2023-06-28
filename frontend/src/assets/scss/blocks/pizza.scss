@@ -10,11 +10,13 @@
   background-position: center;
   background-size: 100%;
 
-  &--foundation--big-creamy {
+  &--foundation--big-creamy,
+  &--foundation--normal-creamy {
     background-image: url("./assets/img/foundation/big-creamy.svg");
   }
 
-  &--foundation--big-tomato {
+  &--foundation--big-tomato,
+  &--foundation--normal-tomato{
     background-image: url("./assets/img/foundation/big-tomato.svg");
   }
 

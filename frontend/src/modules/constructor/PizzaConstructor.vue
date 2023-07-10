@@ -28,7 +28,7 @@ const THREE_INGREDIENTS = 3;
 
 const props = defineProps({
   ingredients: {
-    type: Array,
+    type: Object,
     default: () => ({}),
   },
   diameter: {
